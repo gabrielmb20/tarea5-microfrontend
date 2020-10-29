@@ -1,11 +1,10 @@
 function getAll() {
-  console.log('ok3')
-  var template = window.document.getElementById('list').text;
-  console.log(template);
-  var text = Mustache.render(template, data);
-  console.log(text);
-  document.getElementById('content').innerHTML = text;
-  console.log('ok4')
+  fetch('/template/list.html')
+    .then((response) => response.text())
+    .then((template) => {
+      var rendered = Mustache.render(template, data);
+      document.getElementById('content').innerHTML = rendered;    
+   });
 }
 
 function checkId(item) {
@@ -13,13 +12,14 @@ function checkId(item) {
 }
 
 function getById(query) {
-	console.log('ok5')
-	var params = new URLSearchParams(query);
-	var elem = data.find(checkId,params.get('id'));
-	var template = document.getElementById('single').text;
-	var text = Mustache.render(template, elem);
-	document.getElementById('content').innerHTML = text;
-	console.log('ok6')
+  fetch('/template/single.html')
+    .then((response) => response.text())
+    .then((template) => {
+	  var params = new URLSearchParams(query);
+	  var elem = data.find(checkId,params.get('id'));
+      var rendered = Mustache.render(template, elem);
+      document.getElementById('content').innerHTML = rendered;    
+   });
 }
 
 function init() {
