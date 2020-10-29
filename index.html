@@ -52,7 +52,8 @@
 	}
 	
 	function getById(query) {
-		window.alert(query['id'])
+		let params = new URLSearchParams(query);
+		window.alert(params.get('id'))
 	}
 	
 	function init() {
