@@ -51,15 +51,15 @@
   	  document.getElementById('content').innerHTML = text;
 	}
 	
-	function getById(params) {
-		window.alert(params.what)
+	function getById(query) {
+		window.alert(query.id)
 	}
 	
 	function init() {
 		router = new Navigo(null, false, '#!');
 		router.on({
 		  '/get': function(params,query) {
-			 getById(params);
+			 getById(query);
 		  }
 		});
 		router.on(() => getAll());
