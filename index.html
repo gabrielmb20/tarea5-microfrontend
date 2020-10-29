@@ -58,7 +58,7 @@
 	function init() {
 		router = new Navigo(null, false, '#!');
 		router.on({
-		  '/:id': function(params) {
+		  ':id': function(params) {
 			 getById(params);
 		  },
 		  '*': function() {
