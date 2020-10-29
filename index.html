@@ -57,7 +57,7 @@
 	
 	function init() {
 		window.alert("hola");
-		page('/books/', function(ctx) { window.alert('Hola1'); } );
+		page('/', function(ctx) { window.alert('Hola1'); } );
 		page("/:id", function(ctx) { window.alert('Hola2'); });
 	}
   </script>
