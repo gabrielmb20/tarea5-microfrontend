@@ -58,10 +58,14 @@
 	function init() {
 		router = new Navigo(null, false, '#!');
 		router.on({
-		  '/:id': () => { function(params) {getById(params);} },
-		  '*': () => { getAll(); }
-		});
-		router.resolve();
+		  '/:id': function(params) {
+			 getById(params);
+		  },
+		  '*': function() {
+			 getAll();
+		  }
+		})
+		.resolve();
 	}
   </script>
 
