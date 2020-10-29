@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Books Information Mini Site</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- JSON
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="data/books.json"></script>
+
+  <!-- Javascript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  
+  <script type="text/javascript" src="js/mustache.min.js"></script>
+  <script type="text/javascript" src="js/page.min.js"></script>
+
+  <script id="template" type="text/template">
+	<ul>
+	{{#.}}
+    <li><a href=''> {{ title }}</a></li>
+	{{/.}}
+   </ul>
+  </script>
+
+  <script>
+  	function getAll() {
+  	  var template = document.getElementById('template').text;
+  	  var text = Mustache.render(template, data);
+  	  document.getElementById('content').innerHTML = text;
+	}
+	
+	function getById(id) {
+		window.alert(id)
+	}
+	
+	function init() {
+		window.alert("hola");
+		page('/books/', function(ctx) { window.alert('Hola1'); } );
+		page("/:id", function(ctx) { window.alert('Hola2'); });
+	}
+  </script>
+
+</head>
+<body onload="init();">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+	  <h3 style="margin-top: 15px">Books Information</h3>
+	  This section presents information about books
+	  <p>
+	  <div id="content">
+	  </div>
+
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
