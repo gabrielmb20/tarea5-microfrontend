@@ -1,15 +1,8 @@
-<h4 style="margin-top: 15px">{{ title }}</h4>
-<h5>Book's details</h5>
-<table>
-	<tr><td>ID</td><td>{{ id }}</td></tr>
-	<tr><td>Copyright</td><td>{{ copyright }}</td></tr>
-	<tr><td>Edition</td><td>{{ edition }}</td></tr>
-	<tr><td>Language</td><td>{{ language }}</td></tr>
-	<tr><td>Pages</td><td>{{ pages }}</td></tr>
-	<tr><td>Author</td>
-		<td><a href='http://authors-minisite.netlify.app/get/?id={{ author_id }}'>
-			{{ author }}</a></td></tr>
-	<tr><td>Publisher</td>
-		<td><a href='http://publishers-minisite.netlify.app/get/?id={{ publisher_id }}'>
-			{{ publisher }}</a></td></tr>
-</table>
+<h3 style="margin-top: 15px">Books Information</h3>
+This section presents information about books
+<p>
+<ul>
+  {{#.}}
+    <li><a href='/get/?id={{ id }}'> {{ title }}</a></li>
+  {{/.}}
+</ul>

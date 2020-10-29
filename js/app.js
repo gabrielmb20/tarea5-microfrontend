@@ -12,7 +12,7 @@ function checkId(item) {
 }
 
 function getById(query) {
-  fetch('/template/single.html')
+  fetch('/template/detail.html')
     .then((response) => response.text())
     .then((template) => {
 	  var params = new URLSearchParams(query);
