@@ -38,7 +38,7 @@
 
   <script id="template" type="text/template">
 	<ul>
-	{{#.}}
+	{{#.}}<a href="index.html" id="" title="index">index</a>
     <li><a href=''> {{ title }}</a></li>
 	{{/.}}
    </ul>
@@ -58,7 +58,7 @@
 	function init() {
 		router = new Navigo(null, false, '#!');
 		router.on({
-		  'books': function(params) {
+		  ':id': function(params) {
 			 getById(params);
 		  }
 		});
