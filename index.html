@@ -52,20 +52,18 @@
 	}
 	
 	function getById(params) {
-		window.alert(params.id)
+		window.alert('Hola')
 	}
 	
 	function init() {
 		router = new Navigo(null, false, '#!');
 		router.on({
-		  'books/:id': function(params) {
+		  'books': function(params) {
 			 getById(params);
-		  },
-		  '*': function() {
-			 getAll();
 		  }
-		})
-		.resolve();
+		});
+		router.on(() => getAll());
+		router.resolve();
 	}
   </script>
 
