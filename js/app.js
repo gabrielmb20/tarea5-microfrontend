@@ -23,9 +23,7 @@ function getById(query) {
 }
 
 function init() {
-	console.log('ok1')
 	router = new Navigo(null, false, '#!');
-	console.log('ok2')
 	router.on({
 	  '/get': function(_,query) {
 		 getById(query);
