@@ -59,6 +59,8 @@
 		router = new Navigo(null, false, '#!');
 		router.on({
 		  '/get': function(params,query) {
+			  window.alert(params);
+			  window.alert(query);
 			 getById(query);
 		  }
 		});
