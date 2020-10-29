@@ -1,7 +1,9 @@
 function getAll() {
   console.log('ok3')
   var template = document.getElementById('list').text;
+  console.log(template);
   var text = Mustache.render(template, data);
+  console.log(text);
   document.getElementById('content').innerHTML = text;
   console.log('ok4')
 }
