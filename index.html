@@ -34,7 +34,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	  
   <script type="text/javascript" src="js/mustache.min.js"></script>
-  <script type="text/javascript" src="js/page.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/universal-router/universal-router.min.js"></script>
 
   <script id="template" type="text/template">
 	<ul>
@@ -57,9 +57,12 @@
 	
 	function init() {
 		window.alert("hola");
-		page('/', function(ctx) { window.alert('Hola1'); } );
-		page("/:id", function(ctx) { window.alert('Hola2'); });
-		getAll();
+		const routes = [
+		  { path: '/one', action: () => window.alert("One") },
+		  { path: '/two', action: () => window.alert("Two")  },
+		  { path: '(.*)', action: () => window.alert("Other")  }
+		]
+        const router = new UniversalRouter(routes);
 	}
   </script>
 
