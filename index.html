@@ -36,7 +36,7 @@
   <script type="text/javascript" src="/js/mustache.min.js"></script>
   <script type="text/javascript" src="/js/navigo.min.js"></script>
 
-  <script id="template" type="text/template">
+  <script id="list" type="text/template">
 	<ul>
 	{{#.}}
     <li><a href=''> {{ title }}</a></li>
@@ -44,22 +44,35 @@
    </ul>
   </script>
 
+  <script id="single" type="text/template">
+	<ul>
+    <li><a href=''> {{ title }}</a></li>
+   </ul>
+  </script>
+  
   <script>
   	function getAll() {
-  	  var template = document.getElementById('template').text;
+  	  var template = document.getElementById('list').text;
   	  var text = Mustache.render(template, data);
   	  document.getElementById('content').innerHTML = text;
 	}
 	
+	function checkId() {
+		return id==this
+	}
+	
 	function getById(query) {
-		let params = new URLSearchParams(query);
-		window.alert(params.get('id'))
+		var params = new URLSearchParams(query);
+		var elem = data.find(checkId,params.get('id'));
+    	var template = document.getElementById('single').text;
+    	var text = Mustache.render(template, elem);
+    	document.getElementById('content').innerHTML = text;
 	}
 	
 	function init() {
 		router = new Navigo(null, false, '#!');
 		router.on({
-		  '/get': function(params,query) {
+		  '/get': function(_,query) {
 			 getById(query);
 		  }
 		});
