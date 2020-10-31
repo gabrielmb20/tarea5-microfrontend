@@ -1,11 +1,29 @@
 <h4 style="margin-top: 15px">{{ title }}</h4>
 <h5>Author's details</h5>
-<table>
-	<tr><td>ID</td><td>{{ id }}</td></tr>
-	<tr><td>Nationality</td><td>{{ nationality }}</td></tr>
-	<tr><td>Birth Year</td><td>{{ birth_year }}</td></tr>
-	<tr><td>Fields</td><td>{{ fields }}</td></tr>
-</table>
+<form>
+  <div class="row">
+    <div class="six columns">
+       <label for="idInput">ID</label>
+       <input class="u-full-width" type="number" id="id">{{ id }}</id>
+    </div>
+    <div class="six columns">
+       <label for="nationalityInput">Nationality</label>
+       <input class="u-full-width" type="string" id="nationality">
+	 {{ nationality }}</id>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+       <label for="birthInput">Birth Year</label>
+       <input class="u-full-width" type="number" id="birth_year">{{ birth_year }}</id>
+    </div>
+    <div class="six columns">
+       <label for="fieldsInput">Fields</label>
+       <input class="u-full-width" type="string" id="fields">
+	 {{ fields  }}</id>
+    </div>
+  </div>
+</form>
 <h5>Books</h5>
 <ol>
 {{#books}}
