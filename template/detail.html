@@ -1,5 +1,6 @@
 <h4 style="margin-top: 15px">{{ author }}</h4>
 <h5>Author's details</h5>
+
 <form>
   <div class="row">
     <div class="six columns">
@@ -22,9 +23,10 @@
     </div>
   </div>
 </form>
+
 <h5>Books</h5>
-<ol>
+<ul>
 {{#books}}
   <li><a href="https://books-minisite.netlify.app/get?id={{id}}">{{title}}</li>
 {{/books}}
-</ol>
+</ul>
