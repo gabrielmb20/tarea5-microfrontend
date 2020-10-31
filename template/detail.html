@@ -1,15 +1,38 @@
 <h4 style="margin-top: 15px">{{ title }}</h4>
 <h5>Book's details</h5>
-<table>
-	<tr><td>ID</td><td>{{ id }}</td></tr>
-	<tr><td>Copyright</td><td>{{ copyright }}</td></tr>
-	<tr><td>Edition</td><td>{{ edition }}</td></tr>
-	<tr><td>Language</td><td>{{ language }}</td></tr>
-	<tr><td>Pages</td><td>{{ pages }}</td></tr>
-	<tr><td>Author</td>
-		<td><a href='https://authors-minisite.netlify.app/get/?id={{ author_id }}'>
-			{{ author }}</a></td></tr>
-	<tr><td>Publisher</td>
-		<td><a href='https://publishers-minisite.netlify.app/get/?id={{ publisher_id }}'>
-			{{ publisher }}</a></td></tr>
-</table>
+<form>
+  <div class="row">
+    <div class="six columns">
+       <label for="idInput">ID</label>
+       <input class="u-full-width" type="text" id="id" input="{{ id }}" readonly/>
+    </div>
+    <div class="six columns">
+       <label for="copyrightInput">Copyright</label>
+       <input class="u-full-width" type="text" id="copyright" input="{{ copyright }}" readonly/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+       <label for="editionInput">Edition</label>
+       <input class="u-full-width" type="text" id="edition" input="{{edition }}" readonly/>
+    </div>
+    <div class="six columns">
+       <label for="languageInput">Language</label>
+       <input class="u-full-width" type="text" id="language" input="{{ language }}" readonly/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+       <label for=" authorInput">Author</label>
+       <a href="https://authors-minisite.netlify.app/get/?id={{ author_id }}">
+         <input class="u-full-width" type="button" id=" author" input="{{ author }}" readonly/>
+       </a>
+    </div>
+    <div class="six columns">
+       <label for="languageInput">Publisher</label>
+       <a href="https://publishers-minisite.netlify.app/get/?id={{ publisher_id }}">f
+         <input class="u-full-width" type="button" id="publisher" input="{{ publisher }}" readonly/>
+       </a>
+    </div>
+  </div>
+</form>
