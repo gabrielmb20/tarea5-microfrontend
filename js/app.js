@@ -8,7 +8,7 @@ function getAll() {
 }
 
 function checkId(item) {
-	return item.id==this
+	return item._id==this
 }
 
 function getById(query) {
