@@ -5,7 +5,7 @@ data = [
 		"period": "II",
 		"year": 2020,
 		"group_id": 1,
-		"group_code": "A101",
+		"code": "A101",
 		"professor_id": 1,
 		"profname": "John Wile"
 	},
@@ -15,7 +15,7 @@ data = [
 		"period": "II",
 		"year": 2020,
 		"group_id": 1,
-		"group_code": "A101",
+		"code": "A101",
 		"professor_id": 1,
 		"profname": "John Wile"
 	},
@@ -25,7 +25,7 @@ data = [
 		"period": "II",
 		"year": 2020,
 		"group_id": 1,
-		"group_code": "A101",
+		"code": "A101",
 		"professor_id": 1,
 		"profname": "John Wile"
 	},
@@ -35,7 +35,7 @@ data = [
 		"period": "II",
 		"year": 2020,
 		"group_id": 1,
-		"group_code": "A101",
+		"code": "A101",
 		"professor_id": 1,
 		"profname": "John Wile"
 	},
@@ -45,7 +45,7 @@ data = [
 		"period": "II",
 		"year": 2020,
 		"group_id": 1,
-		"group_code": "A101",
+		"code": "A101",
 		"professor_id": 1,
 		"profname": "John Wile"
 	},
@@ -55,7 +55,7 @@ data = [
 		"period": "II",
 		"year": 2020,
 		"group_id": 1,
-		"group_code": "A101",
+		"code": "A101",
 		"profname": "John Wile"
 	}
 
