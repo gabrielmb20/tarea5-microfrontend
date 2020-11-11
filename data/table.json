@@ -43,5 +43,16 @@ data = [
 				"name": "Programming III"
 			}
 		]
+	},
+	{
+		"_id": 3,
+		"code": "PI",
+		"location": "A104",
+		"courses": [
+			{
+				"course_id": 4,
+				"name": "Programming I"
+			}
+		]
 	}
 ]
