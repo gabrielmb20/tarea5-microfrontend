@@ -4,6 +4,7 @@ data = [
 		"name": "English for Computer Science I",
 		"period": "II",
 		"year": 2020,
+		"group_id": 1,
 		"group_code": "A101",
 		"professor_id": 1,
 		"profname": "John Wile"
@@ -13,6 +14,7 @@ data = [
 		"name": "English for Computer Science II",
 		"period": "II",
 		"year": 2020,
+		"group_id": 1,
 		"group_code": "A101",
 		"professor_id": 1,
 		"profname": "John Wile"
@@ -22,6 +24,7 @@ data = [
 		"name": "English for Computer Science III",
 		"period": "II",
 		"year": 2020,
+		"group_id": 1,
 		"group_code": "A101",
 		"professor_id": 1,
 		"profname": "John Wile"
@@ -31,6 +34,7 @@ data = [
 		"name": "Programming I",
 		"period": "II",
 		"year": 2020,
+		"group_id": 1,
 		"group_code": "A101",
 		"professor_id": 1,
 		"profname": "John Wile"
@@ -40,6 +44,7 @@ data = [
 		"name": "Programming II",
 		"period": "II",
 		"year": 2020,
+		"group_id": 1,
 		"group_code": "A101",
 		"professor_id": 1,
 		"profname": "John Wile"
@@ -49,6 +54,7 @@ data = [
 		"name": "Programming III",
 		"period": "II",
 		"year": 2020,
+		"group_id": 1,
 		"group_code": "A101",
 		"profname": "John Wile"
 	}
