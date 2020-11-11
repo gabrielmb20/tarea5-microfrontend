@@ -7,15 +7,15 @@ data = [
 		"courses": [
 			{
 				"course_id": 1,
-				"title": "English for Computer Science I"
+				"name": "English for Computer Science I"
 			},
 			{
 				"course_id": 2,
-				"title": "English for Computer Science II"
+				"name": "English for Computer Science II"
 			},
 			{
 				"course_id": 3,
-				"title": "English for Computer Science III"
+				"name": "English for Computer Science III"
 			}
 		]
 	},
@@ -27,15 +27,15 @@ data = [
 		"courses": [
 			{
 				"course_id": 4,
-				"title": "Programming I"
+				"name": "Programming I"
 			},
 			{
 				"course_id": 5,
-				"title": "Programming II"
+				"name": "Programming II"
 			},
 			{
 				"course_id": 6,
-				"title": "Programming III"
+				"name": "Programming III"
 			}
 		]
 	},
