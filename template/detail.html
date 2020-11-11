@@ -14,17 +14,17 @@
   </div>
   <div class="row">
     <div class="six columns">
-       <label for="profnameInput">profname</label>
+       <label for="profnameInput">Name</label>
        <input class="u-full-width" id="profname" type="text" value="{{ profname }}"  readonly/>
     </div>
     <div class="six columns">
-       <label for="employee_codeInput">employee_code</label>
+       <label for="employee_codeInput">Code</label>
        <input class="u-full-width" id="employee_code" type="text" value="{{ employee_code  }}"  readonly/>
     </div>
   </div>
 </form>
 
-<h5>courses</h5>
+<h5>Courses</h5>
 <ul>
 {{#courses}}
   <li><a href="https://courses-minisite.netlify.app/get?id={{course_id}}">{{name}}</li>
