@@ -1,35 +1,43 @@
 data = [
 	{
 		"_id": 1,
-		"author": "Abraham Silberschatz",
-		"nationality": "Israelis / American",
-		"birth_year": 1952,
-		"fields": "Database Systems, Operating Systems",
-		"books": [
+		"location": "A101",
+		"courses": [
 			{
-				"book_id": 1,
-				"title": "Operating System Concepts"
+				"course_id": 1,
+				"name": "English for Computer Science I"
 			},
 			{
-				"book_id": 2,
-				"title": "Database System Concepts"
+				"course_id": 2,
+				"name": "English for Computer Science II"
 			}
 		]
 	},
 	{
 		"_id": 2,
-		"author": "Andrew S. Tanenbaum",
-		"nationality": "Dutch / American",
-		"birth_year": 1944,
-		"fields": "Distributed computing, Operating Systems",
-		"books": [
+		"location": "A102",
+		"courses": [
 			{
-				"book_id": 3,
-				"title": "Computer Networks"
+				"course_id": 3,
+				"name": "English for Computer Science III"
 			},
 			{
-				"book_id": 4,
-				"title": "Modern Operating Systems"
+				"course_id": 4,
+				"name": "Programming I"
+			}
+		]
+	},
+	{
+		"_id": 3,
+		"location": "A103",
+		"courses": [
+			{
+				"course_id": 5,
+				"name": "Programming II"
+			},
+			{
+				"course_id": 6,
+				"name": "Programming III"
 			}
 		]
 	}

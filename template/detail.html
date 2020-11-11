@@ -8,25 +8,15 @@
        <input class="u-full-width" id="_id" type="text" value="{{ _id }}" readonly/>
     </div>
     <div class="six columns">
-       <label for="nationalityInput">Nationality</label>
-       <input class="u-full-width" id="nationality" type="text" value="{{ nationality }}" readonly/>
-    </div>
-  </div>
-  <div class="row">
-    <div class="six columns">
-       <label for="birthInput">Birth Year</label>
-       <input class="u-full-width" id="birth_year" type="text" value="{{ birth_year }}"  readonly/>
-    </div>
-    <div class="six columns">
-       <label for="fieldsInput">Fields</label>
-       <input class="u-full-width" id="fields" type="text" value="{{ fields  }}"  readonly/>
+       <label for="locationInput">location</label>
+       <input class="u-full-width" id="location" type="text" value="{{ location }}" readonly/>
     </div>
   </div>
 </form>
 
-<h5>Books</h5>
+<h5>courses</h5>
 <ul>
-{{#books}}
-  <li><a href="https://books-minisite.netlify.app/get?id={{book_id}}">{{title}}</li>
-{{/books}}
+{{#courses}}
+  <li><a href="https://courses-minisite.netlify.app/get?id={{course_id}}">{{title}}</li>
+{{/courses}}
 </ul>
