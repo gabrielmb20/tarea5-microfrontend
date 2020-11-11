@@ -32,10 +32,6 @@ data = [
 			{
 				"course_id": 5,
 				"name": "Programming II"
-			},
-			{
-				"course_id": 6,
-				"name": "Programming III"
 			}
 		]
 	},
@@ -58,12 +54,8 @@ data = [
 		"employee_code": 4392,
 		"courses": [
 			{
-				"course_id": 4,
-				"name": "Programming I"
-			},
-			{
-				"course_id": 5,
-				"name": "Programming II"
+				"course_id": 1,
+				"name": "English for Computer Science I"
 			}
 		]
 	}
