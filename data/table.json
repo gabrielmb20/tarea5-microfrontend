@@ -36,8 +36,8 @@ data = [
 		"year": 2020,
 		"group_id": 1,
 		"code": "ECSIII-PI",
-		"professor_id": 1,
-		"profname": "John Wile"
+		"professor_id": 2,
+		"profname": "Mary Smith"
 	},
 	{
 		"_id": 5,
@@ -46,8 +46,8 @@ data = [
 		"year": 2020,
 		"group_id": 1,
 		"code": "PII-PIII",
-		"professor_id": 1,
-		"profname": "John Wile"
+		"professor_id": 2,
+		"profname": "Mary Smith"
 	},
 	{
 		"_id": 6,
@@ -56,7 +56,8 @@ data = [
 		"year": 2020,
 		"group_id": 1,
 		"code": "PII-PIII",
-		"profname": "John Wile"
+		"professor_id": 3,
+		"profname": "Joshua Marley"
 	}
 
 	
