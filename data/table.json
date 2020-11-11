@@ -1,7 +1,7 @@
 data = [
 	{
 		"_id": 1,
-		"name": "John Wile",
+		"profname": "John Wile",
 		"country": "United States",
 		"employee_code": 1807,
 		"courses": [
@@ -21,7 +21,7 @@ data = [
 	},
 	{
 		"_id": 2,
-		"name": "Mary Smith",
+		"profname": "Mary Smith",
 		"country": "UK",
 		"employee_code": 2017,
 		"courses": [
