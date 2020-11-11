@@ -6,8 +6,8 @@ data = [
 		"year": 2020,
 		"group_id": 1,
 		"code": "ECSI-II",
-		"professor_id": 1,
-		"profname": "John Wile"
+		"professor_id": 4,
+		"profname": "Caroline Andrews"
 	},
 	{
 		"_id": 2,
